@@ -51,6 +51,9 @@ coverage/
 # ---- Docker ----
 docker-compose.override.yml
 
+# ---- AI Governance ----
+.ai/
+
 # ---- Misc ----
 *.log
 logs/
