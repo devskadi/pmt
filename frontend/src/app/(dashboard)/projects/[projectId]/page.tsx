@@ -1,3 +1,3 @@
-/* Project Detail — /projects/[projectId]
- * Placeholder — implementation pending.
- */
+export default function ProjectDetailPage() {
+  return <div>Coming Soon</div>;
+}

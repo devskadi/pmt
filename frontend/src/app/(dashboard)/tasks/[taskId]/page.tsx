@@ -1,3 +1,3 @@
-/* Task Detail — /tasks/[taskId]
- * Placeholder — implementation pending.
- */
+export default function TaskDetailPage() {
+  return <div>Coming Soon</div>;
+}

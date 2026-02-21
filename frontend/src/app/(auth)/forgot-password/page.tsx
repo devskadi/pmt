@@ -1,3 +1,8 @@
-/* Forgot Password Page — /forgot-password
- * Placeholder — implementation pending.
- */
+export default function ForgotPasswordPage() {
+  return (
+    <div>
+      <h1>Forgot Password</h1>
+      <p>Feature coming soon.</p>
+    </div>
+  );
+}

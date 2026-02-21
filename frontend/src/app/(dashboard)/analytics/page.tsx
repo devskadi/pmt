@@ -1,3 +1,3 @@
-/* Analytics Dashboard — /analytics
- * Placeholder — implementation pending.
- */
+export default function AnalyticsPage() {
+  return <div>Coming Soon</div>;
+}

@@ -1,4 +1,3 @@
-/* Project Board — /projects/[projectId]/board
- * Kanban-style task board for the project.
- * Placeholder — implementation pending.
- */
+export default function BoardPage() {
+  return <div>Coming Soon</div>;
+}

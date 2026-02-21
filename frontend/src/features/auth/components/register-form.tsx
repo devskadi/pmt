@@ -1,1 +1,3 @@
-/* Register Form Component — Placeholder */
+export default function RegisterForm() {
+  return <div>Register Form — Coming Soon</div>;
+}

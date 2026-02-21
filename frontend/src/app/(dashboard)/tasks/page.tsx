@@ -1,3 +1,3 @@
-/* Tasks List — /tasks (My Tasks view)
- * Placeholder — implementation pending.
- */
+export default function TasksPage() {
+  return <div>Coming Soon</div>;
+}

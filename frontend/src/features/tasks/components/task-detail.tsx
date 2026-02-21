@@ -1,1 +1,3 @@
-/* Task Detail Panel — Placeholder */
+export default function TaskDetail() {
+  return <div>Task Detail — Coming Soon</div>;
+}

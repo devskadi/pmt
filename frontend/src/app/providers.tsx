@@ -1,12 +1,21 @@
-/* Providers Wrapper
- * -----------------
- * Composes all client-side providers:
- * - QueryClientProvider (React Query)
- * - ThemeProvider (next-themes)
- * - ToastProvider
- *
- * Used in root layout.tsx to wrap the app tree.
- * Keeps layout.tsx clean and providers testable.
- *
- * Placeholder — implementation pending.
- */
+"use client";
+
+import { ReactNode } from "react";
+import { ThemeProvider } from "@/components/shared/theme-provider";
+
+/* -----------------------------------------------------------------------
+   PROVIDERS — Client-side provider composition root
+   
+   All client-side context providers are composed here and wrapped
+   around the app in layout.tsx. Order matters for nesting.
+   ----------------------------------------------------------------------- */
+
+export default function Providers({ children }: { children: ReactNode }) {
+  return (
+    <ThemeProvider>
+      {/* TODO(PMT-100): Add QueryClientProvider when TanStack Query is wired — [severity: medium] */}
+      {/* TODO(PMT-101): Add ToastProvider for global toast notifications — [severity: low] */}
+      {children}
+    </ThemeProvider>
+  );
+}

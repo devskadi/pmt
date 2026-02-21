@@ -7,4 +7,8 @@
  *   schemas/     — Zod validation schemas
  *   types/       — Feature-specific TypeScript types
  */
-export {};
+export { default as LoginForm } from "./components/login-form";
+export { default as RegisterForm } from "./components/register-form";
+export { useAuth } from "./hooks/use-auth";
+export { loginSchema, registerSchema } from "./schemas/auth-schemas";
+export type { LoginInput, RegisterInput } from "./schemas/auth-schemas";

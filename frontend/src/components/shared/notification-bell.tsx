@@ -1,1 +1,3 @@
-/* Notification Bell — Placeholder */
+export default function NotificationBell() {
+  return <div>Notifications</div>;
+}

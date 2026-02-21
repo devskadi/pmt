@@ -3,6 +3,9 @@ const nextConfig = {
   // Enable React strict mode for development
   reactStrictMode: true,
 
+  // Required for Docker multi-stage builds
+  output: "standalone",
+
   // Image optimization domains
   images: {
     remotePatterns: [
@@ -18,10 +21,13 @@ const nextConfig = {
 
   // Redirect API calls to backend in development
   async rewrites() {
+    const backendUrl =
+      process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
     return [
       {
         source: "/api/v1/:path*",
-        destination: `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}/api/v1/:path*`,
+        destination: `${backendUrl}/api/v1/:path*`,
       },
     ];
   },

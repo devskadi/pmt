@@ -1,4 +1,3 @@
-/* User Settings — /settings
- * Profile, preferences, notifications.
- * Placeholder — implementation pending.
- */
+export default function SettingsPage() {
+  return <div>Coming Soon</div>;
+}

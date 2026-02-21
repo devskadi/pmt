@@ -1,3 +1,3 @@
-/* Scorecards — /scorecards
- * Placeholder — implementation pending.
- */
+export default function ScorecardsPage() {
+  return <div>Coming Soon</div>;
+}

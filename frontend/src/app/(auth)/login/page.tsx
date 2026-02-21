@@ -1,3 +1,8 @@
-/* Login Page — /login
- * Placeholder — implementation pending.
- */
+export default function LoginPage() {
+  return (
+    <div>
+      <h1>Login</h1>
+      <p>Authentication coming soon.</p>
+    </div>
+  );
+}

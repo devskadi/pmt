@@ -1,3 +1,3 @@
-/* Project Settings — /projects/[projectId]/settings
- * Placeholder — implementation pending.
- */
+export default function ProjectSettingsPage() {
+  return <div>Coming Soon</div>;
+}

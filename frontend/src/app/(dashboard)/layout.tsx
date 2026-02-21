@@ -1,8 +1,5 @@
-/* Dashboard Layout
- * ----------------
- * Authenticated layout with sidebar navigation,
- * top bar, breadcrumbs, and notification area.
- * Wraps all protected routes.
- *
- * Placeholder — implementation pending.
- */
+import { ReactNode } from "react";
+
+export default function DashboardLayout({ children }: { children: ReactNode }) {
+  return <div>{children}</div>;
+}

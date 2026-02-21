@@ -1,10 +1,10 @@
-/* API Client
- * ----------
- * Axios instance with interceptors for:
- * - Base URL configuration
- * - JWT token injection
- * - 401 auto-refresh
- * - Error normalization
- *
- * Placeholder — implementation pending.
- */
+/* API Client */
+
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
+// TODO: Replace with Axios instance with interceptors
+export const apiClient = {
+  baseURL: API_BASE_URL,
+};
+
+export default apiClient;

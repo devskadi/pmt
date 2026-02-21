@@ -1,9 +1,8 @@
 # ============================================
 # PMT — Docker Compose (Local Development)
 # ============================================
-# Usage: docker compose up -d
-# Dashboard: http://localhost:3000
-# API Docs:  http://localhost:8000/docs
+# Usage: docker compose up -d db redis backend
+# API Docs: http://localhost:8000/api/docs
 
 services:
   # ---- PostgreSQL Database ----
@@ -53,31 +52,12 @@ services:
       - "${BACKEND_PORT:-8000}:8000"
     volumes:
       - ./backend:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     depends_on:
       db:
         condition: service_healthy
       redis:
         condition: service_healthy
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-
-  # ---- Frontend ----
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: pmt-frontend
-    restart: unless-stopped
-    env_file:
-      - ./frontend/.env.local
-    ports:
-      - "${FRONTEND_PORT:-3000}:3000"
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
-      - /app/.next
-    depends_on:
-      - backend
-    command: npm run dev
 
 volumes:
   postgres_data:

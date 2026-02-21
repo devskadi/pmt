@@ -1,6 +1,3 @@
-/* Global Loading UI
- * -----------------
- * Shown during route transitions.
- *
- * Placeholder — implementation pending.
- */
+export default function Loading() {
+  return <div>Loading...</div>;
+}

@@ -61,18 +61,9 @@ class ProjectUpdate(BaseModel):
 class ProjectResponse(BaseModel):
     """Schema for project API responses."""
 
-    model_config = ConfigDict(from_attributes=True)
-
-    id: str
-    name: str
-    description: str | None
-    status: ProjectStatus
-    owner_id: str
-    created_at: datetime
-    updated_at: datetime
-
-    class Config:
-        json_schema_extra = {
+    model_config = ConfigDict(
+        from_attributes=True,
+        json_schema_extra={
             "example": {
                 "id": "550e8400-e29b-41d4-a716-446655440000",
                 "name": "PMT Core Platform",
@@ -82,5 +73,14 @@ class ProjectResponse(BaseModel):
                 "created_at": "2025-01-15T10:30:00Z",
                 "updated_at": "2025-01-15T10:30:00Z",
             }
-        }
+        },
+    )
+
+    id: str
+    name: str
+    description: str | None
+    status: ProjectStatus
+    owner_id: str
+    created_at: datetime
+    updated_at: datetime
 

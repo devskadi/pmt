@@ -1,3 +1,3 @@
-/* Sprints — /projects/[projectId]/sprints
- * Placeholder — implementation pending.
- */
+export default function SprintsPage() {
+  return <div>Coming Soon</div>;
+}
