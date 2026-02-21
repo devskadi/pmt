@@ -1,0 +1,1 @@
+/* Project Card Component — Placeholder */

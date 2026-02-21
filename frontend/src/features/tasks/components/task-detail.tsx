@@ -1,0 +1,1 @@
+/* Task Detail Panel — Placeholder */

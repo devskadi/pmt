@@ -1,0 +1,1 @@
+/* Modal / Dialog Component — Placeholder */

@@ -1,0 +1,13 @@
+# ============================================
+# PMT — Docker Compose (Production Override)
+# ============================================
+# Usage: docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+services:
+  backend:
+    command: gunicorn app.main:app --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000 --workers 4 --timeout 120
+    volumes: []  # No volume mounts in production
+
+  frontend:
+    command: node server.js
+    volumes: []  # No volume mounts in production

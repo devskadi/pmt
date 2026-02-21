@@ -1,0 +1,8 @@
+# Production Dependencies
+-r base.txt
+
+# Production ASGI server
+gunicorn>=23.0.0
+
+# Monitoring & Observability
+sentry-sdk[fastapi]>=2.19.0

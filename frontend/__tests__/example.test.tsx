@@ -1,0 +1,1 @@
+/* Frontend Test — Example Placeholder */

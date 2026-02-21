@@ -1,0 +1,50 @@
+{
+  "name": "pmt-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Project Management Tool — Frontend",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@tanstack/react-query": "^5.62.0",
+    "zustand": "^5.0.0",
+    "zod": "^3.24.0",
+    "axios": "^1.7.0",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.6.0",
+    "lucide-react": "^0.468.0",
+    "date-fns": "^4.1.0",
+    "react-hook-form": "^7.54.0",
+    "@hookform/resolvers": "^3.9.0",
+    "next-themes": "^0.4.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "^15.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "vitest": "^2.1.0",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/jest-dom": "^6.6.0",
+    "prettier": "^3.4.0",
+    "prettier-plugin-tailwindcss": "^0.6.0"
+  }
+}

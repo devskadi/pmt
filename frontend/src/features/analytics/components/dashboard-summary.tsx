@@ -1,0 +1,1 @@
+/* Dashboard Summary Widget — Placeholder */

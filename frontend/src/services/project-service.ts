@@ -1,0 +1,1 @@
+/* Projects API Service — Placeholder */

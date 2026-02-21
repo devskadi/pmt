@@ -1,0 +1,1 @@
+/* Scorecards API Service — Placeholder */

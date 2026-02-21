@@ -1,0 +1,5 @@
+# Alembic Migrations
+# ------------------
+# Database migration scripts managed by Alembic.
+# Run: alembic upgrade head
+# Generate: alembic revision --autogenerate -m "description"

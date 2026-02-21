@@ -1,0 +1,58 @@
+# ============================================
+# PMT — Git Ignore
+# ============================================
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ---- IDEs ----
+.idea/
+.vscode/settings.json
+.vscode/launch.json
+*.code-workspace
+
+# ---- Environment ----
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ---- Python / Backend ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+venv/
+.venv/
+
+# ---- Node / Frontend ----
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+coverage/
+
+# ---- Docker ----
+docker-compose.override.yml
+
+# ---- Misc ----
+*.log
+logs/
+tmp/
+temp/

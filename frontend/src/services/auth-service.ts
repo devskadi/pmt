@@ -1,0 +1,1 @@
+/* Auth API Service — Placeholder */
